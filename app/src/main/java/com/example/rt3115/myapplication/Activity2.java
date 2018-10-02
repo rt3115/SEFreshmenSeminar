@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-public class activity_sk_2 extends AppCompatActivity {
+public class Activity2 extends AppCompatActivity {
     private Button button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sk_2);
+        setContentView(R.layout.Activity_sk_2);
 
         button2 = findViewById(R.id.button2);
 
-        button2.setOnClickListener(new View.OnCLickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
 
@@ -28,7 +28,7 @@ public class activity_sk_2 extends AppCompatActivity {
 
     public void openMainActivity() {
 
-        Intent intent = new Intent (packageContext: this, MainActivity.class);
+        Intent intent = new Intent ( this, MainActivity.class);
         startActivity(intent);
     }
 }
